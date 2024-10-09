@@ -1,0 +1,20 @@
+1conda create -n trainTTS python=3.10
+2conda activate trainTTS
+3สร้างโฟรเดอร์ ตรงไหนก็ได้ --> git clone https://github.com/coqui-ai/TTS.git
+4 cd TTS pip install requirements.txt
+5pip install TTS
+6เข้าไปในTTS ต่อไปเข้า recipes 
+7สร้างชื่อโฟร์เดอร์ mySpeech แล้วเข้าไปใน mySpeech แล้วสร้างโฟร์เดอร์ grolw_tts แล้วสร้างไฟร์  train_glowtts.pyและ thai_cleaners.py 
+8 
+   	###  train_glowtts.py
+copy from link .....
+9 
+	###  thai_cleaners.py
+copy from link .... 
+
+10 python train_glowtts.py
+
+11 new terminal -> conda activate trinaTTS -> tensorboard --logdir=< path of grolw_tts>
+
+12 ถ้าเสร็จ tts --text "สวัสดีครับ" --model_path ที่อยู่ของ model.pth --config_path ที่อยู่ของ config.json --out_path path/output.wav
+
