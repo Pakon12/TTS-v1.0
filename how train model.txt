@@ -4,17 +4,22 @@
 4 cd TTS pip install requirements.txt
 5pip install TTS
 6เข้าไปในTTS ต่อไปเข้า recipes 
-7สร้างชื่อโฟร์เดอร์ mySpeech แล้วเข้าไปใน mySpeech แล้วสร้างโฟร์เดอร์ grolw_tts แล้วสร้างไฟร์  train_glowtts.pyและ thai_cleaners.py 
+7สร้างชื่อโฟร์เดอร์ mySpeech แล้วเข้าไปใน mySpeech แล้วสร้างโฟร์เดอร์ grolw_tts แล้วสร้างไฟร์  train_glowtts.py และ thai_cleaners.py และ metadata.csv และ download ข้อมูลเสียง wavs เป็นโฟร์เดอร์ wavs
 8 
    	###  train_glowtts.py
-copy from link .....
+download from https://github.com/Pakon12/TTS-v1.0
 9 
 	###  thai_cleaners.py
-copy from link .... 
+download from https://github.com/Pakon12/TTS-v1.0 
 
-10 python train_glowtts.py
+10	
+	### metadata.csv
+download from https://github.com/Pakon12/TTS-v1.0
+download from  
 
-11 new terminal -> conda activate trinaTTS -> tensorboard --logdir=< path of grolw_tts>
+11 python train_glowtts.py
 
-12 ถ้าเสร็จ tts --text "สวัสดีครับ" --model_path ที่อยู่ของ model.pth --config_path ที่อยู่ของ config.json --out_path path/output.wav
+12 new terminal -> conda activate trinaTTS -> tensorboard --logdir=< path of grolw_tts>
+
+13 ถ้าเสร็จ tts --text "สวัสดีครับ" --model_path ที่อยู่ของ model.pth --config_path ที่อยู่ของ config.json --out_path path/output.wav
 
