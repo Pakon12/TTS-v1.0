@@ -15,7 +15,7 @@ download from https://github.com/Pakon12/TTS-v1.0
 10	
 	### metadata.csv
 download from https://github.com/Pakon12/TTS-v1.0
-download from  
+download from  https://drive.google.com/drive/folders/1lKuAS5vjU8n2VYtbgzGJx0koSfEJ35pJ?usp=sharing
 
 11 python train_glowtts.py
 
